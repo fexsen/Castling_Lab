@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 void Castling(int n){
-    const int L = 10;
-    int arr [L] = {10, 22, 11, 31, 2, 3, 7, 8, 9, 121};
+     while (n > 10){
+        n--;
+    }
+    int arr [10] = {10, 22, 11, 31, 2, 3, 7, 8, 9, 121};
     for (int i = 0; i <= n-1; i++){
         int c, b;
         c = arr[i];
@@ -16,5 +18,8 @@ void Castling(int n){
 }
 
 int main(){
-    Castling(3);
+    int i;
+    printf("Vvedite chislo perestanovok:");
+    scanf("%d", &i);
+    Castling(i);
 }
