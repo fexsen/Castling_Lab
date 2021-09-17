@@ -8,11 +8,11 @@ void Castling(int n){
     for (int i = 0; i <= n-1; i++){
         int c, b;
         c = arr[i];
-        b = arr[L-i-1];
+        b = arr[10-i-1];
         arr[i] = b;
-        arr[L-i-1] = c;
+        arr[10-i-1] = c;
     }
-    for (int i = 0; i <= L-1; i++){
+    for (int i = 0; i <= 10-1; i++){
         printf("%d\n", arr[i]);
     }
 }
